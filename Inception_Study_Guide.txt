@@ -1,0 +1,96 @@
+Docker Project (42 Inception) – Study Guide
+
+What Inception is trying to teach
+
+1.  Docker fundamentals
+
+-   Containers vs images
+-   Dockerfiles
+-   Container lifecycle
+-   Why containers are not virtual machines
+
+Recommended documentation: - Docker Overview - Images vs Containers -
+Dockerfile reference - Dockerfile best practices - Container lifecycle
+
+2.  Docker Compose Understand:
+
+-   Services
+-   Networks
+-   Volumes
+-   Environment variables
+-   Restart policies
+-   Service dependencies
+
+Read: - Docker Compose Overview - Compose file reference - Compose
+networking - Compose volumes
+
+3.  Linux / System Administration Study:
+
+-   Linux filesystem
+-   Processes
+-   PID 1
+-   Daemons
+-   Signals
+-   Permissions
+-   Users
+-   Services
+
+Read: - Linux process model - PID 1 - Signals - Daemons
+
+4.  Networking Understand:
+
+-   localhost
+-   IP addresses
+-   Ports
+-   TCP
+-   DNS
+-   Reverse proxy
+-   TLS / SSL
+-   HTTP vs HTTPS
+
+Services to learn
+
+NGINX - What is a web server? - What is a reverse proxy? - Why port
+443? - Why TLS?
+
+Read: - NGINX Beginner’s Guide - Reverse proxy concepts
+
+WordPress Learn: - What WordPress is - Why it needs PHP - Why it needs a
+database
+
+PHP-FPM Understand: - PHP is not a web server - PHP-FPM executes PHP -
+NGINX communicates through FastCGI
+
+MariaDB Understand: - Relational databases - Users - Databases -
+Tables - Persistent storage
+
+Storage Learn: - What happens when a container is deleted - Named
+volumes - Bind mounts - tmpfs
+
+Environment Study: - Environment variables - .env files - Docker
+secrets - Why passwords should not be in Dockerfiles
+
+Docker Networking Understand: - Bridge networks - Service names -
+Container communication - Internal vs exposed ports
+
+Docker Best Practices - One process per container - Minimal base
+images - Multi-stage builds - ENTRYPOINT vs CMD - .dockerignore
+
+Suggested learning order 1. Containers vs Virtual Machines 2. Images 3.
+Dockerfiles 4. Containers 5. Docker Compose 6. Volumes 7. Networks 8.
+Environment variables 9. Linux processes (PID 1) 10. NGINX 11.
+HTTP/HTTPS 12. PHP-FPM 13. MariaDB 14. WordPress architecture 15. TLS
+certificates
+
+Official documentation - https://docs.docker.com/ -
+https://docs.docker.com/reference/dockerfile/ -
+https://docs.docker.com/compose/ -
+https://docs.docker.com/engine/network/ -
+https://docs.docker.com/engine/storage/volumes/ -
+https://nginx.org/en/docs/ -
+https://www.php.net/manual/en/install.fpm.php -
+https://mariadb.com/docs/ - https://developer.wordpress.org/
+
+Tip: Always ask “Why does this component exist?” before asking “How do I
+configure it?”. Inception is about understanding infrastructure, not
+memorizing Docker commands.
