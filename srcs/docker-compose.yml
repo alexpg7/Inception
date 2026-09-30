@@ -44,11 +44,11 @@ volumes:
     driver_opts:
       type: none
       o: bind
-      device: /home/YOUR_LOGIN/data/wordpress
+      device: /home/alexp/data/wordpress
 
   mariadb:
     driver: local
     driver_opts:
       type: none
       o: bind
-      device: /home/YOUR_LOGIN/data/mariadb
+      device: /home/alexp/data/mariadb
