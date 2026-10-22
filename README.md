@@ -1,6 +1,10 @@
 *This project has been created as part of the 42 curriculum by alpascua.*
 
-# Inception
+# 🎡 Inception ![Static Badge](https://img.shields.io/badge/Barcelona-black?style=for-the-badge&logo=42&logoColor=%23FFFFFF)
+![Static Badge](https://img.shields.io/badge/Docker-white?style=flat&logo=docker)
+![Static Badge](https://img.shields.io/badge/Shell-grey?style=flat&logo=GNUbash)
+![Static Badge](https://img.shields.io/badge/Makefile-green?style=flat&logo=AnkerMake)
+![Static Badge](https://img.shields.io/badge/status-completed-green?style=flat)
 
 ## Table of Contents
 
