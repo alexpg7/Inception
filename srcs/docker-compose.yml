@@ -59,14 +59,14 @@ volumes:
     driver_opts:
       type: none
       o: bind
-      device: /home/alexp/data/mariadb
+      device: /home/alpascua/data/mariadb
 
   wordpress-data:
     driver: local
     driver_opts:
       type: none
       o: bind
-      device: /home/alexp/data/wordpress
+      device: /home/alpascua/data/wordpress
 
 secrets:
   db_password:

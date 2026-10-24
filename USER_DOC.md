@@ -201,4 +201,4 @@ The project stores persistent data outside the container filesystems.
 
 | Data | Storage location |
 |---|---|
-| MariaDB database | `/home/alexp
+| MariaDB database | `/home/alpascua

@@ -173,15 +173,15 @@ The Compose file defines two named volumes using the local driver with bind opti
 The current host paths are:
 
 ```text
-/home/alexp/data/mariadb
-/home/alexp/data/wordpress
+/home/alpascua/data/mariadb
+/home/alpascua/data/wordpress
 ```
 
 Create the directories before launching the services:
 
 ```bash
-sudo mkdir -p /home/alexp/data/mariadb
-sudo mkdir -p /home/alexp/data/wordpress
+sudo mkdir -p /home/alpascua/data/mariadb
+sudo mkdir -p /home/alpascua/data/wordpress
 ```
 
 If the project is moved to a different machine or user account, update the `device` values in the volume definitions in `srcs/docker-compose.yml`.
@@ -195,14 +195,14 @@ volumes:
     driver_opts:
       type: none
       o: bind
-      device: /home/alexp/data/mariadb
+      device: /home/alpascua/data/mariadb
 
   wordpress-data:
     driver: local
     driver_opts:
       type: none
       o: bind
-      device: /home/alexp/data/wordpress
+      device: /home/alpascua/data/wordpress
 ```
 
 The directories must have suitable permissions for MariaDB and WordPress to write their data. Do not assume that the correct permissions are the same on every host.
@@ -450,8 +450,8 @@ The project keeps persistent data outside the container filesystems.
 
 | Data | Host directory | Container directory |
 |---|---|---|
-| MariaDB database | `/home/alexp/data/mariadb` | `/var/lib/mysql` |
-| WordPress website files | `/home/alexp/data/wordpress` | `/var/www/html` |
+| MariaDB database | `/home/alpascua/data/mariadb` | `/var/lib/mysql` |
+| WordPress website files | `/home/alpascua/data/wordpress` | `/var/www/html` |
 
 These paths reflect the current development configuration. Update them when moving the project to another environment.
 

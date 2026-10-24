@@ -212,8 +212,8 @@ This project declares two named Docker volumes:
 For the current development environment, these named volumes use the local volume driver with bind options. Their data is stored in the following host directories:
 
 ```text
-/home/alexp/data/mariadb
-/home/alexp/data/wordpress
+/home/alpascua/data/mariadb
+/home/alpascua/data/wordpress
 ```
 
 These paths must be adapted if the project is installed under a different user account or on another machine.
@@ -310,15 +310,15 @@ Do not paste actual passwords into the README or commit the secret files to Git.
 The Compose configuration uses these host directories:
 
 ```text
-/home/alexp/data/mariadb
-/home/alexp/data/wordpress
+/home/alpascua/data/mariadb
+/home/alpascua/data/wordpress
 ```
 
 Create them before starting the infrastructure:
 
 ```bash
-sudo mkdir -p /home/alexp/data/mariadb
-sudo mkdir -p /home/alexp/data/wordpress
+sudo mkdir -p /home/alpascua/data/mariadb
+sudo mkdir -p /home/alpascua/data/wordpress
 ```
 
 If the project is being installed under a different account, update the volume device paths in `srcs/docker-compose.yml` first.
